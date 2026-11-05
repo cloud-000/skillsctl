@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skillsctl"
+version = "0.1.0"
+description = "Transactional, harness-aware management of skill bundles"
+requires-python = ">=3.11.8"
+dependencies = []
+
+[project.scripts]
+skillsctl = "skillsctl.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
